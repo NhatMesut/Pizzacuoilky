@@ -1,0 +1,1859 @@
+{
+	"info": {
+		"_postman_id": "28f83137-3ac2-4d5a-be59-c757d995baba",
+		"name": "Pizza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16705353",
+		"_collection_link": "https://lunar-crater-25664.postman.co/workspace/Nodejs_Tour~c4474b59-b080-436d-b6ba-6f4bce5ad43e/collection/16705353-28f83137-3ac2-4d5a-be59-c757d995baba?action=share&source=collection_link&creator=16705353"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ProductDetail",
+					"item": [
+						{
+							"name": "Detail",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/9/detail"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateDetail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6Im5sRWwyWSsyM0FHS255Z0txSHI5THc9PSIsInZhbHVlIjoiV3ZPQUZ3ZUlzc1prNmJ2TjJBdWJCZz09IiwibWFjIjoiNDY3ZDlhOTdmMDAwNjJlZjUxNGU5MGVkMWI5ZDU4YzkxOTkwZmI2NzdjYjU1YTg4NjE0MTE0ZjBlMWQ0MmE3NSIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "size_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "15000",
+											"type": "text"
+										}
+									]
+								},
+								"url": "127.0.0.1:8000/api/products/9/detail"
+							},
+							"response": []
+						},
+						{
+							"name": "DestroyDetail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IlBCSmNWc0IvZzJhMmk5MzI4UXdBamc9PSIsInZhbHVlIjoiRzgvQ2V3U2c2VytQR2dNaW1vdHIyQT09IiwibWFjIjoiYzk5MjAwNmY5Y2VhMjVjYzJiYjQ0OGVkMDU0ZGZkNzNmOGE4NGM2NDdlZTk2YmIwNTgxZjEyODBlMDliZDRjZiIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/3/detail"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProductBorder",
+					"item": [
+						{
+							"name": "ProductBorder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IlpwRDZRbzFvZ2J3Zmg3ZkxpNTZRNVE9PSIsInZhbHVlIjoiSXBCK2VZTEdVYXNHbG5jeHVhTmFNZz09IiwibWFjIjoiM2Y3NWVjM2M3N2EyYjIxN2EwNzRiZDE3YjkzNGZhNzljZWZmNTNiNTJlNDJjNDk2YjBlNDIwZTg3ZjZlNTU4NyIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/9/border"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateProductBorder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IlpwRDZRbzFvZ2J3Zmg3ZkxpNTZRNVE9PSIsInZhbHVlIjoiSXBCK2VZTEdVYXNHbG5jeHVhTmFNZz09IiwibWFjIjoiM2Y3NWVjM2M3N2EyYjIxN2EwNzRiZDE3YjkzNGZhNzljZWZmNTNiNTJlNDJjNDk2YjBlNDIwZTg3ZjZlNTU4NyIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "border_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "127.0.0.1:8000/api/products/9/border"
+							},
+							"response": []
+						},
+						{
+							"name": "DestroyProductBorder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IlpwRDZRbzFvZ2J3Zmg3ZkxpNTZRNVE9PSIsInZhbHVlIjoiSXBCK2VZTEdVYXNHbG5jeHVhTmFNZz09IiwibWFjIjoiM2Y3NWVjM2M3N2EyYjIxN2EwNzRiZDE3YjkzNGZhNzljZWZmNTNiNTJlNDJjNDk2YjBlNDIwZTg3ZjZlNTU4NyIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/3/border"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProductTopping",
+					"item": [
+						{
+							"name": "ProductTopping",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IkNxTmYyRmh3VmJDUEhsTDREUzg1RHc9PSIsInZhbHVlIjoibTJKVVJ6emwwem96eHp3b21SUVFnUT09IiwibWFjIjoiNmU0ODdmOWM5ODcxZjAyZDcyZTAzZmUzMTMxZDczNTgwNGI3YjNhMDFlMWJhYWZhMTUyMjFmY2VhZWVhYWJlMiIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/9/topping"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateProductTopping",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IkNxTmYyRmh3VmJDUEhsTDREUzg1RHc9PSIsInZhbHVlIjoibTJKVVJ6emwwem96eHp3b21SUVFnUT09IiwibWFjIjoiNmU0ODdmOWM5ODcxZjAyZDcyZTAzZmUzMTMxZDczNTgwNGI3YjNhMDFlMWJhYWZhMTUyMjFmY2VhZWVhYWJlMiIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "topping_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "127.0.0.1:8000/api/products/9/topping"
+							},
+							"response": []
+						},
+						{
+							"name": "DestroyProductTopping",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJpdiI6IkNxTmYyRmh3VmJDUEhsTDREUzg1RHc9PSIsInZhbHVlIjoibTJKVVJ6emwwem96eHp3b21SUVFnUT09IiwibWFjIjoiNmU0ODdmOWM5ODcxZjAyZDcyZTAzZmUzMTMxZDczNTgwNGI3YjNhMDFlMWJhYWZhMTUyMjFmY2VhZWVhYWJlMiIsInRhZyI6IiJ9"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "127.0.0.1:8000/api/products/1/topping"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/products/14"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkxLdE1kYU4rRUc0ZFM5cktFWW9WNGc9PSIsInZhbHVlIjoiTS9WS0wwdzdtUzRseHNXMFFnY1g1Zz09IiwibWFjIjoiOTNmNzFiNDNkYmVmZWMzZjM0YTRhZDJmNjUyNjQ0OWYwZDEzMWE3NmU5ZDZjYzNmMGVlZmEyMmMxNjI5Y2RkMCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Pizza 3",
+									"type": "text"
+								},
+								{
+									"key": "short_description",
+									"value": "Mô tả ngắn",
+									"type": "text"
+								},
+								{
+									"key": "detailed_description",
+									"value": "Mô tả dài ",
+									"type": "text"
+								},
+								{
+									"key": "original_price",
+									"value": "15000",
+									"type": "text"
+								},
+								{
+									"key": "sale_price",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/z4617362817818_39cacdb57658e537cb0e22dc18e885d8.jpg"
+								},
+								{
+									"key": "slug",
+									"value": "pizza-3",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "pizza1, bánh pizza",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlBpYlNpUG9tQkh4ajJ3UFlmbDE2M1E9PSIsInZhbHVlIjoiZXFqVUVWRjVGRTFyejlSWm1Ec3kyQT09IiwibWFjIjoiZmFiMzU4MGFjMGZmZGJlOTYwZWJmZWM2YzkwNjdhYTQzZjgyNjdkZWEzOTM1Y2NmOGM3NDYyZjg3ODljM2I3MyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Pizza 2",
+									"type": "text"
+								},
+								{
+									"key": "short_description",
+									"value": "Mô tả ngắn",
+									"type": "text"
+								},
+								{
+									"key": "detailed_description",
+									"value": "Mô tả dài ",
+									"type": "text"
+								},
+								{
+									"key": "original_price",
+									"value": "15000",
+									"type": "text"
+								},
+								{
+									"key": "sale_price",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/z4617362741623_98c0302df70bfe02dd581fa8a0e35aa6.jpg"
+								},
+								{
+									"key": "slug",
+									"value": "pizza-123",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "pizza1, bánh pizza",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/products/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImVVOG0xOEl2RjZaZENxcS9RNmxUY1E9PSIsInZhbHVlIjoiY3dGVVRGajNqZW82UnNscE80L01FUT09IiwibWFjIjoiMzcwOGVjNzAzN2YxNWFjYWM4ZGU4MWEzMDQ4MzJhZTMwMjc3YWMzNWE4ODk5NTMyMTJlYzFlNGFjZGQwZDNlMCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "127.0.0.1:8000/api/products/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Border",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/borders"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/borders/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IjQ2cHUwVUlMSGJ5ZTJWTUFRZEdDNUE9PSIsInZhbHVlIjoiNDk5bTBSL1l5YkNuNXhVSkpab1NqZz09IiwibWFjIjoiOTYwYmU4N2MxNmJlMTFjNmM2MzJmNjJkOTBjZTU3ZjllMjJjYmM3NzE1MTQ5ZDE0YjdlMDdhNmQzMWNlMzZmMSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Tròn",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/borders"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IjQ2cHUwVUlMSGJ5ZTJWTUFRZEdDNUE9PSIsInZhbHVlIjoiNDk5bTBSL1l5YkNuNXhVSkpab1NqZz09IiwibWFjIjoiOTYwYmU4N2MxNmJlMTFjNmM2MzJmNjJkOTBjZTU3ZjllMjJjYmM3NzE1MTQ5ZDE0YjdlMDdhNmQzMWNlMzZmMSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rounded",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/borders/8"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImViVHg0KzRRMHRaeVI1Wkc4clE4a2c9PSIsInZhbHVlIjoibGR0V25XQ0hlYnMyaWFCT1praS9CQT09IiwibWFjIjoiOTZlMzVjMTMyZmQzMmIyMWEzNDcxYWRhOGEzYjkzNjkzZjY0Y2IxZmU4NmFjNDBlMTA0NzMzNWY0ZjJhYmY4YSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "127.0.0.1:8000/api/borders/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Size",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/sizes"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/sizes/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImlSSWcwUlNpNmJmSTJ2OGpPbEdtVXc9PSIsInZhbHVlIjoic2laOFZsWWRPUTdrbllkZnJFQW1Ndz09IiwibWFjIjoiNDJlZTM2MjdmOGNkODA0NzBiZDVkYTVkMTdkZTZhMWQ3Y2FkNmFhMzE4N2MxMzJhMDE5ZjQ2MjdhMzU3NDc3YiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Tròn",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/sizes"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImlSSWcwUlNpNmJmSTJ2OGpPbEdtVXc9PSIsInZhbHVlIjoic2laOFZsWWRPUTdrbllkZnJFQW1Ndz09IiwibWFjIjoiNDJlZTM2MjdmOGNkODA0NzBiZDVkYTVkMTdkZTZhMWQ3Y2FkNmFhMzE4N2MxMzJhMDE5ZjQ2MjdhMzU3NDc3YiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rounded",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "16000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/sizes/12"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IklFUU90RCtlMUtUcThiZGhMSkhodEE9PSIsInZhbHVlIjoiNEVWQ1crQXZZb2tTQy9QZkEvQUtHUT09IiwibWFjIjoiMzgzZTdlOTRmMDA1OWZmMTYwODQ4YTQwNGJmZGUzNTQ4NGQzODMyZjBkZjdhZDBhNGQzZTQ2YjczNjBjMTM5MSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "127.0.0.1:8000/api/sizes/9"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Topping",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/toppings"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/toppings/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImFUdHB1QW9kVmlWcHlqUUR0NDhteWc9PSIsInZhbHVlIjoiUnprTm5xbVJtTEMzenZrLysvWGhJdz09IiwibWFjIjoiOWFhMWRjODI4MjFmODI5YzdmNjQ4YjMwZWE5OWZiOWUxYWQ4MzhiMzg3YmVkMjM1OTA2M2VkZDNjMGVhODEyMyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cao",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/toppings"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImFUdHB1QW9kVmlWcHlqUUR0NDhteWc9PSIsInZhbHVlIjoiUnprTm5xbVJtTEMzenZrLysvWGhJdz09IiwibWFjIjoiOWFhMWRjODI4MjFmODI5YzdmNjQ4YjMwZWE5OWZiOWUxYWQ4MzhiMzg3YmVkMjM1OTA2M2VkZDNjMGVhODEyMyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thấp",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "12000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/toppings/9"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IklFUU90RCtlMUtUcThiZGhMSkhodEE9PSIsInZhbHVlIjoiNEVWQ1crQXZZb2tTQy9QZkEvQUtHUT09IiwibWFjIjoiMzgzZTdlOTRmMDA1OWZmMTYwODQ4YTQwNGJmZGUzNTQ4NGQzODMyZjBkZjdhZDBhNGQzZTQ2YjczNjBjMTM5MSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "127.0.0.1:8000/api/toppings/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": "127.0.0.1:8000/api/categories/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlQxWit3UU1qekhFTG9zaW1MZGlFM0E9PSIsInZhbHVlIjoiOFgrOHVTUWFzUVBnQm55OTlZYXovUT09IiwibWFjIjoiNzdmNDUxYWYyOGMzNDYwNjcyMTVhMDkxMTZkMzc4MzAxZTVmNjE4Zjg0ZmFmZDgzZjQ3NGZhYzI4NDQxZWFkNCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "abc1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/z4617362817818_39cacdb57658e537cb0e22dc18e885d8.jpg"
+								},
+								{
+									"key": "slug",
+									"value": "ab-cd-e111",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkwrRU1tRk8ya2YvbHFpeGR4OGN4WFE9PSIsInZhbHVlIjoidnZrN2p2L1lUWkt2VnQvdmFHWjg4QT09IiwibWFjIjoiOGIzZjlkMDE0NWMzZDA1NDU0NjVhZTIyOTA0YjhmZTJiMjkwODliMmZmZWU3NTRhY2Q3OTVjOGY4YzIyYzhkNCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Category 1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/z4617362817818_39cacdb57658e537cb0e22dc18e885d8.jpg"
+								},
+								{
+									"key": "slug",
+									"value": "category-1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/categories/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlQxWit3UU1qekhFTG9zaW1MZGlFM0E9PSIsInZhbHVlIjoiOFgrOHVTUWFzUVBnQm55OTlZYXovUT09IiwibWFjIjoiNzdmNDUxYWYyOGMzNDYwNjcyMTVhMDkxMTZkMzc4MzAxZTVmNjE4Zjg0ZmFmZDgzZjQ3NGZhYzI4NDQxZWFkNCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "127.0.0.1:8000/api/categories/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/coupon/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImlyUjZpWDM4UGU3U25HaWljYmRTWXc9PSIsInZhbHVlIjoiYTlEeHgraHhKb3NsL2IrZnVnN2trZz09IiwibWFjIjoiYjY0Zjg1M2VmOTBmMzIyNjQzN2JhMzczMmUzN2NmMGRlMzAxMzg3MTYwMjY1ZDRjNTQxMDk1NzNmODkwYTAwNiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "GIAMGIA20",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Giảm giá 20%",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "expiry_date",
+									"value": "2024-11-14",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImlyUjZpWDM4UGU3U25HaWljYmRTWXc9PSIsInZhbHVlIjoiYTlEeHgraHhKb3NsL2IrZnVnN2trZz09IiwibWFjIjoiYjY0Zjg1M2VmOTBmMzIyNjQzN2JhMzczMmUzN2NmMGRlMzAxMzg3MTYwMjY1ZDRjNTQxMDk1NzNmODkwYTAwNiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "GIAMGIA20",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Giảm giá 20%",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "expiry_date",
+									"value": "2024-11-14",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/coupon/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkpyclZ5Vnd0M1JRcTl5WWIvOUN0akE9PSIsInZhbHVlIjoiR3k5MjF3dy9EZ0ZIUVo5QUlhandHQT09IiwibWFjIjoiMWU3Y2VlNjI4YWNiMGZkZTVkM2M5ZjBkMjVjMWM2NWViZDBjMmY0YTRmMDIyMTYzNjczMGE3YzQ1YWU0NDgyNSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/coupon/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6InRiMzlHOUFJbG9WZk0vRzJKenFFZFE9PSIsInZhbHVlIjoiM1pad0h1Z2NwSnZ5TjBXRGtUMmRDQT09IiwibWFjIjoiMWFlZjQ2ZjE3YjdhZjg1N2Y0OGE0ZWJkNjYxN2U3Yzg3N2VkNjExNjAyYmNiMDIyNjY1MDlhMTdlZTBiYTkyNCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/user/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6InlvYVI3NkpRTTN4YTJ0RENiWVFsYnc9PSIsInZhbHVlIjoiOTBjaTRiTE1rQnY4OFpKcXpjdml2UT09IiwibWFjIjoiMThhODZlZjA0YzZlNzA1MzNiNWJiNTIwYWU3ZjlmYzdkNDc2ODRhMzdmY2Y3NjkzODhhMmIxODU1ZWE5MjBjZiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/user/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6InlvYVI3NkpRTTN4YTJ0RENiWVFsYnc9PSIsInZhbHVlIjoiOTBjaTRiTE1rQnY4OFpKcXpjdml2UT09IiwibWFjIjoiMThhODZlZjA0YzZlNzA1MzNiNWJiNTIwYWU3ZjlmYzdkNDc2ODRhMzdmY2Y3NjkzODhhMmIxODU1ZWE5MjBjZiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Nguyễn Văn Bánh",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nguyenvanb@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0555666777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Hà Nội",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/user/update"
+					},
+					"response": []
+				},
+				{
+					"name": "Block",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6Ik9FQUo2VjdPZFkyL25QUVdrUXlZQnc9PSIsInZhbHVlIjoicWx3SmFyWHV1WjdmdlVPOWhZTFNLUT09IiwibWFjIjoiMTRkNGM4MTE2ZGIxMWE0ODVkYjJjNTcxNTlmNmNlMzA5MjU2YTVhZmM4MWFiYWYxN2RmMjVlODcwODM1NTYyOCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/user/2/block"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkdvTVhDejJxY2owRVhIWnlvOGROSlE9PSIsInZhbHVlIjoiUGt2QTdCV2ZIQWdjRmprWThWUEpGUT09IiwibWFjIjoiY2Q1MmIyM2FmNWM5ODQzNWI0YmUwYzc0MGRkMGUxNGUwZjQ4ODY2ZmU0ZmVkNjcxZTIzNmRhZmU1MTI5OGNmYSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkdvTVhDejJxY2owRVhIWnlvOGROSlE9PSIsInZhbHVlIjoiUGt2QTdCV2ZIQWdjRmprWThWUEpGUT09IiwibWFjIjoiY2Q1MmIyM2FmNWM5ODQzNWI0YmUwYzc0MGRkMGUxNGUwZjQ4ODY2ZmU0ZmVkNjcxZTIzNmRhZmU1MTI5OGNmYSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/employees/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkdvTVhDejJxY2owRVhIWnlvOGROSlE9PSIsInZhbHVlIjoiUGt2QTdCV2ZIQWdjRmprWThWUEpGUT09IiwibWFjIjoiY2Q1MmIyM2FmNWM5ODQzNWI0YmUwYzc0MGRkMGUxNGUwZjQ4ODY2ZmU0ZmVkNjcxZTIzNmRhZmU1MTI5OGNmYSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "nguyenvanc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Nguyễn Văn Chung",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0555666777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Hà Nội",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Nhân Viên",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1998-05-06",
+									"type": "text"
+								},
+								{
+									"key": "id_card_number",
+									"value": "001202020203",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-05-06",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "150000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkdvTVhDejJxY2owRVhIWnlvOGROSlE9PSIsInZhbHVlIjoiUGt2QTdCV2ZIQWdjRmprWThWUEpGUT09IiwibWFjIjoiY2Q1MmIyM2FmNWM5ODQzNWI0YmUwYzc0MGRkMGUxNGUwZjQ4ODY2ZmU0ZmVkNjcxZTIzNmRhZmU1MTI5OGNmYSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "nguyenvanc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Nguyễn Văn Chung",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0555666777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Hà Nội",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Nhân Viên",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1998-05-06",
+									"type": "text"
+								},
+								{
+									"key": "id_card_number",
+									"value": "001202020203",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-05-06",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "150000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/employees/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Block",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6Ik9FQUo2VjdPZFkyL25QUVdrUXlZQnc9PSIsInZhbHVlIjoicWx3SmFyWHV1WjdmdlVPOWhZTFNLUT09IiwibWFjIjoiMTRkNGM4MTE2ZGIxMWE0ODVkYjJjNTcxNTlmNmNlMzA5MjU2YTVhZmM4MWFiYWYxN2RmMjVlODcwODM1NTYyOCIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/employees/2/block"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImIzRjdzY0JDY09ESk9sdkFuUkhKRmc9PSIsInZhbHVlIjoiWDM2ZytEVG9SbGxOZUpqbUhwbGNwUT09IiwibWFjIjoiYTZmMDQwYzIxOTE5ZWQxNzNlNDhkZmZjZTMzOTA3OGNmMGM5ZjE4NTM2ZDViODE2MDA5MTcwYmQ1ZmI3YjgwMSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IktZY2pkckF6Z1RFNjhBdDM0aTByRmc9PSIsInZhbHVlIjoiMGZETFlSY0wyY2xMTmI3SlNvb2Fidz09IiwibWFjIjoiOGJjOTdjZWE4ZDhhMDE5YTMxNzg3NjI1NDYxNWY5Nzc2N2FhNDg1ZTkwNTBjNmE1YjY5M2QxNGFhODBlNGM1OSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/orders/7"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6Ikg0ZitqK2FmL0x6Q1ZnRElSRFNFaGc9PSIsInZhbHVlIjoicTBSK3dMR0NQZHVFMkRHVWp4cTA4Zz09IiwibWFjIjoiYzIwZTMxNWQ4YmY3OGE2OGEwZGUwZTlmYTUyMGI5ZWQ2ODYyMTVlYzIyZDNiN2U3ODUwZThkMDU4NWM5NmU4MSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address",
+									"value": "Hà Nội",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0999888999",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Pay",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6InhiSFhwT0lJeVR6N2FpMUl6TFhzR0E9PSIsInZhbHVlIjoiZEFiVlZVQzJFMWdiTWFoNCtIS2VZZz09IiwibWFjIjoiNDBhZmYxYTVhNzZjNmQ1OTAyYzc2YWU4OTE5MTFiODdlMmExYzMxNzQ2ZjJhZTNmYTdiY2Y0MzJhODA4OWRlZiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/orders/1/pay"
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlVxWFNoM0pXc042ODhpS2xLaEFUK2c9PSIsInZhbHVlIjoiMjhHWTJLY1ZpdG9aMVl0SHRwUFZMUT09IiwibWFjIjoiNmNjNTIwODk3NzkwNjVlNjBiMjJlMTQzODg1MzgwOGRhNjBmOTY3YmMzMTVlMzBlNjFlYjc2MmZkZjg5YTE4ZSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "127.0.0.1:8000/api/orders/1/status"
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IjR5aGxKNG95d2F4eXRaOS8xakZWelE9PSIsInZhbHVlIjoiTkdDRXp4ZjVyaVUwVjUvTVhvNDY4dz09IiwibWFjIjoiOTA0MWY5MjEzOTg0MTY4NTBhODg2OWNhOGIxMTc2Y2Y2ZmIwYzI4Nzg4N2Y5NmE1NzVkYWU2MmNhOTZmZDMzMSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/orders/7/cancel"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetailOrder",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6InBweStHZzVDZFI0NHd0SFhjVCs3eHc9PSIsInZhbHVlIjoiRUpuSk9sak0ya2EvM25hTE1IL0pGUT09IiwibWFjIjoiMGE2OGZkNWRjNjk5NTRmYWU1NDc1M2NkMjUwN2QyMTMxOTRlZjRkMGY4OTc5OTFjYzgxZDU2NjI4OWJmMzhiYiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/orders/7/detail"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6ImdGd2IrdEFWUlhGOTZTeGViVlVqRFE9PSIsInZhbHVlIjoiRWlzREgzU09JZWxldnBEb1dSSHltdz09IiwibWFjIjoiYjlhODcyYTAyODZjNGZlZTQ5MmI1MzAxOThjOWQ5ZWUwNDk3NjRkMDI1N2M3MTIwMWU3YTJkYTdhNzgwYzU0YyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "Small",
+									"type": "text"
+								},
+								{
+									"key": "border",
+									"value": "Round",
+									"type": "text"
+								},
+								{
+									"key": "soles",
+									"value": "Rubber",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/orders/1/detail"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6Ijlza0V6a3BnZHl5TC85MERITWVsb0E9PSIsInZhbHVlIjoiUmtXdkJyMklaWXR4L1RUa2hoMmhKUT09IiwibWFjIjoiZmRmZGQ4OGJmMWMxNjc5YTg0NDk0MDE0MTEwZDg1NTIxYzM5YmM4NTMzYmU1NGE5YjA4MGM3N2YzMzk3YzU2YiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/carts"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IjJ2dG50N0FoeHVUNUZVSzc2dVdNaUE9PSIsInZhbHVlIjoiMGNPbytMOFpuY0ppS0V0KzIyK01xUT09IiwibWFjIjoiZjFkNzU0MDM5MzJkMGY2NTM4ODcxMjgwNmI3MTY0OWM5ZTZmY2JiZTQ2OGNkMGNlYWY3ZGQ0Mjc5NzFiMGE2ZSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "border_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topping_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "detail_product_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/carts"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlVSSVBNOTF1MjJkYm00UmRrR1hXTmc9PSIsInZhbHVlIjoieFpPSllzbVgrcjBtZnMyUTFIUGJJZz09IiwibWFjIjoiNjhlNTU5MWU3YjI5NDY1ZWIxYjg0NmZkNDUzMmNjZTc5OThhMjk3M2EzYjgwMDA4MDQ5MWM1ODUyYzAzMTk2MiIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/carts/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlovbWZlRmQxZCtCaFBwRVZqRTljM0E9PSIsInZhbHVlIjoiWWdCRGhZdmpqR2QyclhUS1U1UzluZz09IiwibWFjIjoiMTQ4YTRlYmYwMGM3YjRkZTQyMmI4YjAyYzE2ZDc2ZWNlZWNiNGRmN2E2NjdkNjIwYzI4MDVlZThhNjg2OThhMyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "127.0.0.1:8000/api/carts/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "RefreshToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh_token",
+									"value": "eyJpdiI6ImZjc2huR2wvRXBZSmJpV1ZGaU92QWc9PSIsInZhbHVlIjoiUlk5RFJRRUl1QVViVGRldjNOVGRUdz09IiwibWFjIjoiMzI4OTZhNmMyMTJkMGFiNGI2YTU0MjIyNjZjMzg0NDYwZGI4ZGQ4MDM5NjQ0ZjY0YzQyNzlkNGIxMzRhOGQ2NSIsInRhZyI6IiJ9",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/refresh"
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "nguyenvane@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Nguyen Van Em",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0999888777",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Hà Nội",
+									"type": "text"
+								}
+							]
+						},
+						"url": "127.0.0.1:8000/api/register"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statistics",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IkdRb2lVZkJHTDZFWlBuc1I2UzA4emc9PSIsInZhbHVlIjoiKzh2RGlDTmdpbkJGcGFMK2tIbkNWQT09IiwibWFjIjoiNWVkYjQ5NGQxOWYzMzYzMjNkMGE2Y2M0MjQzZDQ3MWY0ZTllM2I3Y2E5OTVmODVmOTM5MDdjZWY2YjcyZmMzYyIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/statistics"
+					},
+					"response": []
+				},
+				{
+					"name": "MonthlyRevenue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJpdiI6IlB6SnF4d1dheFRmTlluVEszbWlIWUE9PSIsInZhbHVlIjoiN0l2WllzYWdzNUdVaytUZHA4czJzUT09IiwibWFjIjoiYjZhMDYxZDBkNTRmNzI1MThmZjFlY2RiNWM0NzQ5MDM3NDljMGFiYzNiN2MzNDU4OGIxMzgyMGJmNDY0OTFiYSIsInRhZyI6IiJ9"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/statistics/revenue"
+					},
+					"response": []
+				},
+				{
+					"name": "MonthlyOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "127.0.0.1:8000/api/statistics/order"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
